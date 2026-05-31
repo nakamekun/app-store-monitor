@@ -1,0 +1,14 @@
+[
+  {
+    "app_store_id": "0000000001",
+    "bundle_id": "com.example.pinlog",
+    "sku": "pinlog-ios",
+    "name": "PinLog"
+  },
+  {
+    "app_store_id": "0000000002",
+    "bundle_id": "com.example.waterdone",
+    "sku": "waterdone-ios",
+    "name": "WaterDone"
+  }
+]

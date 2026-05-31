@@ -1,0 +1,47 @@
+# Local environment and secrets
+.env
+.env.local
+.env.*
+!.env.example
+private_keys/
+*.p8
+*AuthKey*
+*credentials*
+*secret*
+
+# Runtime data
+data/*
+!data/
+!data/.gitkeep
+data/*.sqlite3
+data/*.sqlite3-*
+reports/*
+!reports/
+!reports/.gitkeep
+reports/daily_*.md
+logs/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Build and editor artifacts
+build/
+dist/
+*.egg-info/
+.DS_Store
+.idea/
+.vscode/
