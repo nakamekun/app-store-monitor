@@ -130,6 +130,11 @@ python -m src.cli check-config
 python -m src.cli check-connection --real
 ```
 
+If setup validation fails, see
+[docs/troubleshooting.md](docs/troubleshooting.md) for mock-mode checks, real
+App Store Connect setup, OpenSSL discovery, Discord validation, and local file
+safety.
+
 5. Sync apps and create ongoing Analytics Reports requests:
 
 ```bash
