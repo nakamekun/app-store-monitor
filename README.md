@@ -66,6 +66,24 @@ make daily-mock
 
 The mock flow initializes SQLite, inserts deterministic sample metrics, writes a Markdown report under `reports/`, and prints it to stdout.
 
+## Sample Daily Report
+
+Mock mode produces a daily KPI report that is safe to share in issues, docs, and demos because it does not use App Store Connect credentials or real app data.
+
+```text
+# App Store Daily Report - 2026-05-31
+
+## Summary
+
+- Apps with downloads: 5 / 5
+- Total downloads: 193
+- Best CTR app: URL Cleaner (10.33%)
+- Highest impressions app: WakeProof (3,216)
+- Search CTR total: 21.4% (614 / 2,864)
+```
+
+See the full mock output in [docs/sample-report.md](docs/sample-report.md).
+
 ## Configuration
 
 Copy `.env.example` to `.env` and edit only local values:
