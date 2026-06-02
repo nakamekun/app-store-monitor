@@ -26,6 +26,8 @@ python -m src.cli report --latest --print
 
 `create-report-request --all` is safe to run daily. Existing active ongoing requests are reported as `existing`.
 
+If `check-config` or `check-connection --real` fails, use [configuration-troubleshooting.md](configuration-troubleshooting.md) before retrying the rest of the real-mode flow.
+
 ## Discord Notifications
 
 Set these values only in local `.env`:

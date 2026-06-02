@@ -130,6 +130,8 @@ python -m src.cli check-config
 python -m src.cli check-connection --real
 ```
 
+If either command fails, see [docs/configuration-troubleshooting.md](docs/configuration-troubleshooting.md) for common setup and credential issues.
+
 5. Sync apps and create ongoing Analytics Reports requests:
 
 ```bash
@@ -193,6 +195,12 @@ python -m unittest discover -s tests
 ```
 
 The test suite uses mocks and temporary files. It does not require real Apple credentials, Discord webhooks, or network access.
+
+## Troubleshooting
+
+- Use mock mode first: `python -m src.cli daily --mock --print`
+- Use [docs/configuration-troubleshooting.md](docs/configuration-troubleshooting.md) for `.env`, OpenSSL, App Store Connect permission, and Discord webhook failures
+- Keep `.env`, `.p8` files, webhooks, logs, SQLite files, and generated reports out of commits
 
 ## Security Model
 
