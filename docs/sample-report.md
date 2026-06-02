@@ -2,6 +2,8 @@
 
 This is a mock-mode sample. It does not contain real App Store Connect data, real app identifiers, private credentials, or production KPI history.
 
+Use this page to understand the report structure before you connect App Store Connect credentials. Every app name, app identifier, and KPI value below is mock data only.
+
 ```text
 # App Store Daily Report - 2026-05-31
 
@@ -70,3 +72,57 @@ python -m src.cli --db data/sample.sqlite3 daily --mock --print
 ```
 
 The generated SQLite database and report files are ignored by `.gitignore`.
+
+## How to Read the Sample
+
+### Summary
+
+The summary is the fastest way to scan the day:
+
+- `Apps with downloads` shows how many tracked apps recorded at least one download.
+- `Total downloads` gives the portfolio-wide daily download count.
+- `Best CTR app` highlights the app with the strongest search click-through rate, which is product page views divided by search impressions.
+- `Highest impressions app` shows which app had the most App Store visibility.
+- `Search CTR total` rolls up search impressions and search-driven product page views across every mock app.
+
+The low-volume note is a warning label. It reminds you that conversion rates and day-over-day rankings are less reliable when an app has very few product page views.
+
+### App Performance Table
+
+This table is the per-app daily scoreboard:
+
+- `Impressions` means the app appeared in App Store surfaces such as search or browse.
+- `Product Page Views` counts visits to the app’s App Store product page.
+- `Downloads` is the number of first-time downloads recorded for the day.
+- `CVR` means conversion rate, calculated as downloads divided by product page views.
+- `DL vs prev` and `CVR vs prev` compare the latest day against the previous stored day so you can spot movement quickly.
+
+### Search Winners
+
+This section isolates search performance. It helps answer which apps turned App Store Search visibility into product page visits and downloads most effectively on the latest day.
+
+### Emerging Apps
+
+This section calls out apps with growing attention. The impression and page-view deltas show which apps are gaining visibility, while `DL Delta` shows whether that extra attention is also becoming downloads.
+
+### Search Exposure, No Downloads
+
+This section is reserved for apps that earned search visibility but did not convert into downloads. In the sample above there are no candidates, which is why the section reports `No candidates.`
+
+### Improvement Candidates
+
+This section highlights apps with enough traffic to review but weaker conversion performance. It is intended as a prioritization list for store listing, screenshots, copy, or onboarding investigations rather than as proof of a product problem by itself.
+
+### Source Type Breakdown
+
+This section separates totals and app rows by traffic source so you can see where visibility and conversion are coming from:
+
+- `Search impressions total` aggregates App Store Search visibility across all apps.
+- `Browse impressions total` aggregates non-search App Store discovery such as browsing or featured surfaces.
+- Per-app rows break out one source type at a time so you can compare how the same app performs in search versus browse contexts.
+
+## Safe Sharing Notes
+
+- Keep examples and screenshots limited to mock mode output when contributing docs.
+- Do not commit `.env` files, `.p8` keys, Discord webhook URLs, SQLite databases, generated local reports, or logs.
+- If you need to explain a setup step publicly, use placeholders instead of real app IDs, bundle IDs, or credentials.

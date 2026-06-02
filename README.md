@@ -83,6 +83,7 @@ Mock mode produces a daily KPI report that is safe to share in issues, docs, and
 ```
 
 See the full mock output in [docs/sample-report.md](docs/sample-report.md).
+That guide also explains what each major section means so new users can read the sample before connecting real App Store Connect credentials.
 
 ## Configuration
 
