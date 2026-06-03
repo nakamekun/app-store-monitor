@@ -82,7 +82,7 @@ Mock mode produces a daily KPI report that is safe to share in issues, docs, and
 - Search CTR total: 21.4% (614 / 2,864)
 ```
 
-See the full mock output in [docs/sample-report.md](docs/sample-report.md).
+See the full mock output and a plain-language walkthrough of each section in [docs/sample-report.md](docs/sample-report.md).
 
 ## Configuration
 

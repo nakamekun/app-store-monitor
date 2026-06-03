@@ -2,6 +2,45 @@
 
 This is a mock-mode sample. It does not contain real App Store Connect data, real app identifiers, private credentials, or production KPI history.
 
+## How to read this report
+
+The generated daily report is meant to answer one question quickly: "Which apps need attention today?"
+
+### Summary
+
+The `Summary` block is the executive snapshot. It tells you how many apps actually produced downloads, how many total downloads landed that day, which app had the strongest search click-through rate, which app had the broadest top-of-funnel reach, and how search traffic performed across the portfolio as a whole.
+
+The table under `Summary` then moves from portfolio-wide totals to app-by-app context:
+
+- `Impressions`: how often the app was shown in App Store surfaces
+- `Product Page Views`: how often users opened the product page
+- `Downloads`: installs attributed to the reporting window
+- `CVR`: conversion rate from page views to downloads
+- `DL vs prev`: day-over-day download change
+- `CVR vs prev`: day-over-day conversion-rate change
+
+The low-volume note matters because very small page-view counts can make conversion swings look more dramatic than they really are.
+
+### Search Winners
+
+`Search Winners` highlights the apps currently converting App Store Search traffic best. This is useful when you want quick examples of titles or listings that are already pulling strong qualified traffic.
+
+### Emerging Apps
+
+`Emerging Apps` is the momentum view. It surfaces apps whose impressions and page views are growing so you can spot rising visibility before it fully shows up in download totals.
+
+### Search Exposure, No Downloads
+
+`Search Exposure, No Downloads` calls out apps that are being shown in search results but still are not converting into installs. If this section contains rows, those apps are likely candidates for metadata, screenshots, pricing, or positioning work.
+
+### Improvement Candidates
+
+`Improvement Candidates` is the "something is off" section. It looks for apps that have enough traffic to judge but are still converting below the current threshold. This helps you prioritize where product-page improvements may have the highest near-term payoff.
+
+### Source Type Breakdown
+
+`Source Type Breakdown` explains where visibility and downloads came from. The aggregate rows show total search, browse, and page-view volume; the per-app rows then break out individual source types so you can tell whether an app is relying more on search discovery or browse discovery.
+
 ```text
 # App Store Daily Report - 2026-05-31
 
