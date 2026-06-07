@@ -2,6 +2,15 @@
 
 This is a mock-mode sample. It does not contain real App Store Connect data, real app identifiers, private credentials, or production KPI history.
 
+## How to read the report
+
+- **Summary** gives a quick daily health check: total downloads, the highest-impression mock app, and the strongest search click-through rate.
+- **Search Winners** highlights mock apps that attracted search impressions and turned some of that attention into downloads.
+- **Emerging Apps** calls out mock apps with improving impressions, page views, or downloads compared with the previous mock day.
+- **Search Exposure, No Downloads** is a watch list for mock apps that received search visibility but did not convert it into downloads.
+- **Improvement Candidates** points to mock apps with enough page views to review, but lower conversion than the sample threshold.
+- **Source Type Breakdown** separates mock App Store Search, Browse, and total page-view activity so readers can see where traffic came from.
+
 ```text
 # App Store Daily Report - 2026-05-31
 
